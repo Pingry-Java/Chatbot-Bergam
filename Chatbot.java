@@ -33,7 +33,8 @@ public class Chatbot
 			keys.nextLine(); //Let's the user answer byt doesn't store the answer
 		}
 		String answer = "anything other than bye";  //just to get into the loop, can be anything
-		while (! answer.equals("bye") & ! answer.equals("Bye")) //!= compares reference, cant be used
+		while ((! answer.equals("bye")) && (! answer.equals("Bye"))) //!= compares reference, cant be used
+		// can also put the not operator on the outside-- demorgans law
 		{
 			System.out.println("Tell me one of your hobbies (or say \"bye\" to exit)"); // back slash makes sure the quotes dont end the string
 			answer = keys.nextLine();
